@@ -32,7 +32,7 @@ jobs:
         working-directory: ./01 Starting Project
         run: npm run build
       - name: Upload artifacts
-        uses: action/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: dist-files
           path: |
