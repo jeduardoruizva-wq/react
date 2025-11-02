@@ -35,10 +35,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dist-files
-          working-directory: ./01 Starting Project
+          
           path: |
-            dist
-            package.json
+            ./01 Starting Project/dist
+            ./01 Starting Project/package.json
   deploy:
     needs: build
     runs-on: ubuntu-latest
